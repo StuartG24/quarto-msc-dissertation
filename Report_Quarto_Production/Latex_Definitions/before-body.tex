@@ -1,0 +1,45 @@
+% Custom Cover Page, Before Everything else
+
+% Layout for the title page
+$if(title)$
+
+\cleardoublepage
+\thispagestyle{empty}
+
+\begin{flushright}
+\includegraphics[width=0.4\textwidth]{uos_logo.png} 
+\end{flushright}
+
+\begin{center}
+
+$for(by-author)$
+$for(by-author.affiliations)$
+{\large \textit{$it.department$} \\}
+{\large \textit{$it.group$} \\}
+{\large \textit{$it.name$} \par}
+$endfor$
+$endfor$
+
+\hbox{}\vskip 0cm plus 1fill
+{\Huge\bfseries $title$ \par}
+$if(subtitle)$
+{\Large\bfseries $subtitle$ \par}
+$endif$
+\vspace{5ex}
+$for(by-author)$
+{\Large\bfseries $by-author.name.literal$ \par}
+$endfor$
+\vskip 1cm plus 2fill
+
+{\bfseries\small Dissertation submitted in partial fulfilment for the degree of
+Master of Science in Artificial Intelligence \par}
+\vspace{2ex}
+{\bfseries\small $date$ \par}
+
+\end{center}
+$endif$
+
+% Set page numbering to arabic and will start with the frontmatter
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}

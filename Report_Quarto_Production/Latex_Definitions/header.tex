@@ -1,0 +1,15 @@
+% Add custom LaTeX header directives here
+
+% Adjust spacing between paragraphs
+\setlength{\parskip}{0.5em} % Adjust paragraph spacing
+
+% Headings, same font as text, and smaller, numbering
+\addtokomafont{disposition}{\rmfamily}
+% \KOMAoptions{headings=small}
+% \KOMAoptions{numbers=endperiod=false}
+
+% Reduce space above heading levels
+\RedeclareSectionCommand[beforeskip=0em, afterindent=false]{chapter}
+% \RedeclareSectionCommand[beforeskip=1em, afterindent=false]{section}
+% \RedeclareSectionCommand[beforeskip=1em, afterindent=false]{subsection}
+% \RedeclareSectionCommand[beforeskip=1em, afterindent=false]{subsubsection}

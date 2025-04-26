@@ -1,0 +1,61 @@
+---
+title: "Report Drafting WIP: Template"
+subtitle: "v0.1"
+author: "Stuart Gow"
+date: "2025-04-26"
+date-format: "D MMMM YYYY"
+code-fold: true
+highlight-style: atom-one-light
+bibliography: references.bib
+csl: ieee.csl
+link-citations: true
+format:
+    pdf: 
+        papersize: a4
+        fontsize: 12pt
+        indent: true
+        include-in-header:
+            text: |
+                \setlength{\parskip}{0.5em} % Adjust paragraph spacing
+        toc: true
+        toc-title: "Table of Contents"
+        # toc-depth: 2
+        lof: true
+        lot: true
+        number-sections: true
+        # number-depth: 2
+---
+
+\clearpage
+
+# Report Section Drafting - Template
+
+## Test Subsection
+
+Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia sonum. Dulcedinem praecipuum vox desiderant hic hauriantur sed tractandae. Realiter reperiri collecta at an in. Quodque ne im ab ex hominem usitata apertum. Tum judicium sua age automata eos quicquam. Si confirmari persuadeor praemissae satyriscos cogitantem et et. Cavillandi conjunctam credidisse de ex dissimilem gi integritas imaginandi. Examino plausum sub attendo hos.
+
+Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia sonum. Dulcedinem praecipuum vox desiderant hic hauriantur sed tractandae. Realiter reperiri collecta at an in. Quodque ne im ab ex hominem usitata apertum. Tum judicium sua age automata eos quicquam. Si confirmari persuadeor praemissae satyriscos cogitantem et et. Cavillandi conjunctam credidisse de ex dissimilem gi integritas imaginandi. Examino plausum sub attendo hos.
+
+And use @DonoghueEtAl2020
+
+### Test Lower Level
+
+Mentemque persuadet ei opportune de aggredior proponere. Imaginabar objectioni indefinite ne ab propositio. Ex vera iste quam mo mihi fere post. Rogo meae imo bono aër vidi non sint. In refutent ea utrimque extensio re tractare ex rationem. Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia sonum. Dulcedinem praecipuum vox desiderant hic hauriantur sed tractandae. Realiter reperiri collecta at an in. Quodque ne im ab ex hominem usitata apertum. Tum judicium sua age automata eos quicquam. Si confirmari persuadeor praemissae satyriscos cogitantem et et. Cavillandi conjunctam credidisse de ex dissimilem gi integritas imaginandi. Examino plausum sub attendo hos.
+
+#### Even Lower Test Section
+
+Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia sonum. Dulcedinem praecipuum vox desiderant hic hauriantur sed tractandae. Realiter reperiri collecta at an in. Quodque ne im ab ex hominem usitata apertum. Tum judicium sua age automata eos quicquam. Si confirmari persuadeor praemissae satyriscos cogitantem et et. Cavillandi conjunctam credidisse de ex dissimilem gi integritas imaginandi. Examino plausum sub attendo hos.
+
+#### Even Lower Test Section
+
+Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia sonum. Dulcedinem praecipuum vox desiderant hic hauriantur sed tractandae. Realiter reperiri collecta at an in. Quodque ne im ab ex hominem usitata apertum. Tum judicium sua age automata eos quicquam. Si confirmari persuadeor praemissae satyriscos cogitantem et et. Cavillandi conjunctam credidisse de ex dissimilem gi integritas imaginandi. Examino plausum sub attendo hos.
+
+\clearpage
+
+# References {.unnumbered}
+
+\begingroup
+\raggedright
+::: {#refs}
+:::
+\endgroup

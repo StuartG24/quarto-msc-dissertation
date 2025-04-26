@@ -9,7 +9,7 @@ The majority of the content has been derived from a couple of existing sources t
 
 ## Customisation
 
-This template produces a report in the style set by the Univesity of Stirling, but can obviously be easily customised to meet the requirements of other institutions.
+This template produces a report in the style set by the University of Stirling, but can obviously be easily customised to meet the requirements of other institutions.
 
 I have only just started using Quarto so any comments, suggestions, improvements are gratefully received.
 

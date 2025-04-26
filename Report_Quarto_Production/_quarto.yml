@@ -1,0 +1,76 @@
+project:
+  type: book
+
+book:
+  title: "Dissertation Full Title"
+  subtitle: "Short Subtitle"
+  author: 
+    name: Stuart Gow
+    affiliations:
+      - name: University of Stirling
+        group: Faculty of Natural Sciences
+        department: Division of Computing Science and Mathematics
+  date: 23 April 2025
+  date-format: "MMMM YYYY"
+
+  # Structure of the report, nb index is mandatory
+  # -------------------------------------------------------------------
+  # before-body.tex
+  #   title page
+  # index.qmd + 00_Frontmatter.qmd
+  #   abstract, attestation, acknowledgements 
+  #   table of contents, list of tables, list of figures
+  #   ?? abbreviations
+  # Report_Content, *.qmd files
+  #   the body of the dissertation
+  # References, references.qmd, references.bib, ieee.csl
+  #   references
+  # Report_Content, *_Appendix.qmd files
+  #   appendices 
+  # -------------------------------------------------------------------
+  chapters:
+    - index.qmd
+    - Report_Content/10_Introduction.qmd
+    - Report_Content/20_Literature_Review.qmd
+    - Report_Content/30_Methodology.qmd
+    - Report_Content/40_Results_Discussion.qmd
+    - Report_Content/50_Conclusion.qmd
+    - References/references.qmd
+  appendices:
+    - Report_Content/A_Appendix.qmd
+
+# References, citation format
+bibliography: References/references.bib
+csl: References/ieee.csl
+link-citations: true
+
+# PDF Formatting
+format:
+  pdf:
+    # keep-tex: true
+    documentclass: scrreprt
+    classoption: 
+    - headings=small
+    - numbers=noenddot
+
+    papersize: a4
+    fontsize: 12pt
+    # mainfont: "Palatino"
+    # mainfont: "Times New Roman"
+    indent: true  # Indent paragraphs after to the first one
+
+    template-partials: 
+      - Latex_Definitions/before-body.tex
+      - Latex_Definitions/toc.tex
+    include-in-header:
+      - Latex_Definitions/header.tex
+
+    # Table of contents, figures etc, section numbering
+    toc: true
+    toc-title: "Table of Contents"
+    toc-depth: 2
+    lof: true
+    lot: true
+    number-sections: true
+    # number-depth: 2
+

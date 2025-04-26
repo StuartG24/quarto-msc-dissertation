@@ -1,0 +1,12 @@
+<!-- Pull in the content for the frontmatter -->
+{{< include Report_Content/00_Frontmatter.qmd >}}
+
+<!-- Put the table of contents etc -->
+\tableofcontents
+\listoftables
+\listoffigures
+
+<!-- Reset page numbering restart at 1 and Arabic -->
+\clearpage
+\pagenumbering{arabic}
+\flushbottom
