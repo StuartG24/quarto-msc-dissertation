@@ -1,16 +1,18 @@
 project:
   type: book
 
+version: "Draft v0.1"
 book:
-  title: "Dissertation Full Title"
-  subtitle: "Short Subtitle"
+  title: "Project Title"
+  # subtitle: "Short Subtitle"
+
   author: 
     name: Stuart Gow
     affiliations:
       - name: University of Stirling
         group: Faculty of Natural Sciences
         department: Division of Computing Science and Mathematics
-  date: 23 April 2025
+  date: 31 August 2025
   date-format: "MMMM YYYY"
 
   # Structure of the report, nb index is mandatory
@@ -29,6 +31,7 @@ book:
   #   appendices 
   # -------------------------------------------------------------------
   chapters:
+    
     - index.qmd
     - Report_Content/10_Introduction.qmd
     - Report_Content/20_Literature_Review.qmd
@@ -54,8 +57,8 @@ format:
     - numbers=noenddot
 
     papersize: a4
-    fontsize: 12pt
-    # mainfont: "Palatino"
+    fontsize: 11pt
+    # mainfont: "Calibri"
     # mainfont: "Times New Roman"
     indent: true  # Indent paragraphs after to the first one
 
@@ -63,7 +66,11 @@ format:
       - Latex_Definitions/before-body.tex
       - Latex_Definitions/toc.tex
     include-in-header:
-      - Latex_Definitions/header.tex
+      - Latex_Definitions/include-in-header.tex
+
+    geometry:
+      - top=3cm
+      - bottom=3cm
 
     # Table of contents, figures etc, section numbering
     toc: true

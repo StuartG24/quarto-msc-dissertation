@@ -1,9 +1,11 @@
-# Conclusion
+# Evaluation & Conclusions
 
 ## Summary
 
-## Evaluation
+## Evaluation of the Project
 
 ## Limitations
+
+## Comparison with Existing Work
 
 ## Future Work

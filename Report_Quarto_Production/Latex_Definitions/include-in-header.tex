@@ -13,3 +13,18 @@
 % \RedeclareSectionCommand[beforeskip=1em, afterindent=false]{section}
 % \RedeclareSectionCommand[beforeskip=1em, afterindent=false]{subsection}
 % \RedeclareSectionCommand[beforeskip=1em, afterindent=false]{subsubsection}
+
+% Headers Footers
+%
+% With draft version number, date for use until published
+\usepackage{datetime}
+% \renewcommand{\dateseparator}{/}
+\newdateformat{mydateformat}{\twodigit{\THEDAY}/\twodigit{\THEMONTH}/\THEYEAR}
+\newcommand{\drafttext}{\small {{< meta version >}}, \mydateformat\today}
+
+\usepackage{scrlayer-scrpage}
+\lohead[\drafttext]{\drafttext}
+\cohead[]{}
+\cofoot[- \pagemark\ -]{- \pagemark\ -}
+% \rofoot[]{}
+
