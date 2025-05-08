@@ -1,23 +1,45 @@
 ---
-title: "Report Drafting WIP: Template"
-subtitle: "v0.1"
-author: "Stuart Gow"
-date: "2025-04-26"
+title: "Chapter Draft: WIP"
+subtitle: "A Sub Title"
+version: "Draft v0.1"
+
+author:
+    name: Stuart Gow
+    affiliations:
+      - name: University of Stirling
+        group: Faculty of Natural Sciences
+        department: Division of Computing Science and Mathematics
+date: 30 May 2025
 date-format: "D MMMM YYYY"
+
 code-fold: true
 highlight-style: atom-one-light
-bibliography: references.bib
-csl: ieee.csl
+
+# References, citation format
+bibliography: ../Report_Quarto_Production/References/references.bib
+csl: ../Report_Quarto_Production/References/ieee.csl
 link-citations: true
+
+# PDF Formatting
 format:
     pdf: 
+        documentclass: scrartcl
         papersize: a4
-        fontsize: 12pt
+        fontsize: 11pt
         indent: true
+
         include-in-header:
             text: |
-                \setlength{\parskip}{0.5em} % Adjust paragraph spacing
+                % Adjust paragraph spacing
+                \setlength{\parskip}{0.5em} 
+                % With draft version number, date for use until published
+                \usepackage{datetime}
+                \newdateformat{mydateformat}{\twodigit{\THEDAY}/\twodigit{\THEMONTH}/\THEYEAR}
+                \newcommand{\drafttext}{\small {{< meta version >}}, \mydateformat\today}
+                \usepackage{scrlayer-scrpage}
+                \lohead[\drafttext]{\drafttext}
         toc: true
+
         toc-title: "Table of Contents"
         # toc-depth: 2
         lof: true
@@ -36,7 +58,7 @@ Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia
 
 Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia sonum. Dulcedinem praecipuum vox desiderant hic hauriantur sed tractandae. Realiter reperiri collecta at an in. Quodque ne im ab ex hominem usitata apertum. Tum judicium sua age automata eos quicquam. Si confirmari persuadeor praemissae satyriscos cogitantem et et. Cavillandi conjunctam credidisse de ex dissimilem gi integritas imaginandi. Examino plausum sub attendo hos.
 
-And use @DonoghueEtAl2020
+And use @donoghue2020
 
 ### Test Lower Level
 
@@ -56,6 +78,8 @@ Dixi omni quas re se poni is eram. Una mundo tangi sub tam capax porro vel talia
 
 \begingroup
 \raggedright
+
 ::: {#refs}
 :::
+
 \endgroup
